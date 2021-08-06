@@ -1,0 +1,14 @@
+import dodine_rasta.*
+import wollok.game.*
+
+program programa {
+	game.height(10)
+	game.width(10)
+	game.addVisualCharacter(dodain)
+	game.addVisual(nahuel)
+	game.addVisual(soloTexto)
+	game.addVisual(invisible)
+	game.onCollideDo(invisible, { alguien => game.say(alguien, "¿Qué fue eso?") })
+	game.onCollideDo(nahuel, { alguien => nahuel.visitadoPor(alguien) })
+	game.start()
+}
