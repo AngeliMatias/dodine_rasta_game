@@ -9,7 +9,7 @@ object colores {
 
 //solo imagen
 object dodain {
-
+	const property name = "dodain"
 	const property image = "dodine.png"
 	var property position = game.at(3, 3)
 
@@ -17,7 +17,7 @@ object dodain {
 
 //texto, imagen y color
 object nahuel {
-
+	const property name = "rasta"
 	const property image = "rasta.png"
 	var property position = game.at(7, 3)
 	var visitante = null
@@ -31,7 +31,7 @@ object nahuel {
 	}
 
 	method text() {
-		return if (self.visitado()) "¡Qué piola! ¡Vino " + visitante.toString() + "!" else "¡Qué bajón!"
+		return if (self.visitado()) "¡Qué piola! ¡Vino " + visitante.name() + "!" else "¡Qué bajón!"
 	}
 
 	method textColor() {
