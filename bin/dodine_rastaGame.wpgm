@@ -8,7 +8,9 @@ program programa {
 	game.addVisual(nahuel)
 	game.addVisual(soloTexto)
 	game.addVisual(invisible)
+	game.addVisual(invisibleQueHabla)
 	game.onCollideDo(invisible, { alguien => game.say(alguien, "¿Qué fue eso?") })
 	game.onCollideDo(nahuel, { alguien => nahuel.visitadoPor(alguien) })
+	game.onCollideDo(invisibleQueHabla, {alguien => game.say(invisibleQueHabla, "¡Cuidado!")})
 	game.start()
 }
