@@ -52,3 +52,8 @@ object invisible {
 	const property position = game.at(5, 3)
 
 }
+
+object invisibleQueHabla {
+	
+	const property position = game.at(1, 3)
+}
