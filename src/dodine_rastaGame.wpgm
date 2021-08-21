@@ -9,6 +9,7 @@ program programa {
 	game.addVisual(soloTexto)
 	game.addVisual(invisible)
 	game.addVisual(invisibleQueHabla)
+	game.addVisual(imagenNoEncontrada)
 	game.onCollideDo(invisible, { alguien => game.say(alguien, "¿Qué fue eso?") })
 	game.onCollideDo(nahuel, { alguien => nahuel.visitadoPor(alguien) })
 	game.onCollideDo(invisibleQueHabla, {alguien => game.say(invisibleQueHabla, "¡Cuidado!")})

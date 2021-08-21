@@ -57,3 +57,10 @@ object invisibleQueHabla {
 	
 	const property position = game.at(1, 3)
 }
+
+object imagenNoEncontrada {
+	
+	const property position = game.at(1, 1)
+	
+	const property image = "imagenInexistente.png"
+}
